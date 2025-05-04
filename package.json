@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{ts,js}\"",
     "build": "tsc",
-    "run": "node ./lib/index.js"
+    "start": "node ./lib/index.js"
   },
   "keywords": [],
   "author": "",

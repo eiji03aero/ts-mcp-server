@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "ts-mcp-server": {
-        "command": "node",
-        "args": ["./lib/index.js"],
+        "command": "npm",
+        "args": ["run", "start"],
         "alwaysAllow": [],
         "disabled": false
     }
