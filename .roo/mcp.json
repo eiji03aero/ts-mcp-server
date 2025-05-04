@@ -1,10 +1,13 @@
 {
   "mcpServers": {
     "ts-mcp-server": {
-        "command": "npm",
-        "args": ["run", "start"],
-        "alwaysAllow": [],
-        "disabled": false
+      "command": "npm",
+      "args": [
+        "run",
+        "start"
+      ],
+      "alwaysAllow": [],
+      "disabled": true
     }
   }
 }

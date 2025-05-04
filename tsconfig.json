@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "target": "es2022",
-    "module": "node16",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node16",
-    "types": ["node"],
-    "outDir": "./lib"
+    "types": ["node"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
