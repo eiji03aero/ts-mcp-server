@@ -1,0 +1,43 @@
+name: Build and Commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Allows the workflow to push commits
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Ensures full git history is fetched
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'  # Adjust to your project's Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: Configure Git
+      run: |
+        git config user.name 'eiji03aero'
+        git config user.email 'eiji03aero@gmail.com'
+
+    - name: Stage and Commit Build Files
+      run: |
+        git add .
+        git diff --staged --quiet || git commit -m "Build files"
+
+    - name: Push Changes
+      run: git push
