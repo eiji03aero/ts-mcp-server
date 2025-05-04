@@ -1,0 +1,1 @@
+declare function getHoge(name: string, age: number): string;

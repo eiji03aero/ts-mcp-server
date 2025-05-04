@@ -1,0 +1,23 @@
+{
+  "name": "ts-mcp-server",
+  "version": "1.0.0",
+  "description": "- A MCP server implementation to support typescript related opeartions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.{ts,js}\"",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "@types/node": "^22.15.3",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "zod": "^3.24.3"
+  }
+}
